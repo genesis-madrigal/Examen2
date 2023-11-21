@@ -73,6 +73,8 @@ GO
 SELECT * FROM Asignaciones
 GO
 
+DELETE FROM TECNICOS
+
 INSERT INTO Usuarios(Nombre, CorreoElectronico, Telefono) VALUES
 ('Oscar Isaac', 'oscar@examen2.net', '89898989'),
 ('Jose Pedro', 'pedro@examen2.net', '87878787'),
@@ -100,8 +102,8 @@ GO
 
 
 INSERT INTO Tecnicos(Nombre, Especialidad) VALUES
-('Edward', 'Tecnico en computo'),
-('Jacob', 'Tecnico electricista')
+('Edward', 'Técnico en cómputo'),
+('Jacob', 'Técnico electricista')
 GO
 
 INSERT INTO Asignaciones(ReparacionID, TecnicoID) VALUES
@@ -111,7 +113,7 @@ INSERT INTO Asignaciones(ReparacionID, TecnicoID) VALUES
 GO
 
 
-/*DBCC CHECKIDENT ('Asignaciones', RESEED, 0);*/
+/*DBCC CHECKIDENT ('Tecnicos', RESEED, 0);*/
 
 
 CREATE PROCEDURE CONSULTAR_EQUIPOS

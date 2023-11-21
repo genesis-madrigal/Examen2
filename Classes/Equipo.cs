@@ -33,7 +33,7 @@ namespace Examen2
         }
 
 
-        public static int Agregar(int EquipoID, string TipoEquipo, string Modelo, int UsuarioID)
+        public static int Agregar(string TipoEquipo, string Modelo, int UsuarioID)
         {
             int retorno = 0;
 
@@ -154,7 +154,7 @@ namespace Examen2
                     {
                         CommandType = CommandType.StoredProcedure
                     };
-                    cmd.Parameters.Add(new SqlParameter("@EQUIPOID", id));
+                    cmd.Parameters.Add(new SqlParameter("@CODIGO", id));
                     cmd.Parameters.Add(new SqlParameter("@TIPOEQUIPO", tipo));
                     cmd.Parameters.Add(new SqlParameter("@MODELO", modelo));
                     cmd.Parameters.Add(new SqlParameter("@USUARIOID", usuario));

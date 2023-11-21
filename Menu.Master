@@ -4,7 +4,7 @@
 
 <html>
 <head runat="server">
-    <title>Linus Tech Tips | Linus Media Group</title>
+    <title>Extreme Tech Upgrades | Tecnología a su alcance</title>
 
      <meta charset="UTF-8">
      <link href="CSS/CSS.css" rel="stylesheet" />
@@ -13,22 +13,34 @@
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 88px;
+            height: 85px;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
 
-<nav class="nav nav-pills flex-column flex-sm-row">
-    <a class="flex-sm-fill text-sm-center nav-link" href="Home.aspx">Inicio</a>
-    <a class="flex-sm-fill text-sm-center nav-link" href="Usuarios.aspx">Usuarios</a>
-    <a class="flex-sm-fill text-sm-center nav-link" href="Tecnicos.aspx">Técnicos</a>
-   <a class="flex-sm-fill text-sm-center nav-link" href="Equipos.aspx">Equipos</a>
-</nav>
+    <nav class="navbar navbar-light" style="background-color: #dce6f2;">
+        <nav class="nav nav-pills flex-column flex-sm-row">
+            <img src="Images/Screenshot_2023-11-20_235107-removebg-preview.png" class="auto-style1"/>
+            <a class="flex-sm-fill text-sm-center nav-link align-self-center" href="Home.aspx">Inicio</a>
+            <a class="flex-sm-fill text-sm-center nav-link align-self-center" href="Usuarios.aspx">Usuarios</a>
+            <a class="flex-sm-fill text-sm-center nav-link align-self-center" href="Tecnicos.aspx">Técnicos</a>
+           <a class="flex-sm-fill text-sm-center nav-link align-self-center" href="Equipos.aspx">Equipos</a>
+        </nav>
+    </nav>
 
 
-        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+                          
+                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
-        </div>
+            
+                    
+        
     </form>
 </body>
 </html>
