@@ -40,7 +40,7 @@ namespace Examen2
             string constr = ConfigurationManager.ConnectionStrings["Conexion"].ConnectionString;
             using (SqlConnection con = new SqlConnection(constr))
             {
-                using (SqlCommand cmd = new SqlCommand("SELECT *  FROM Tecnicos"))
+                using (SqlCommand cmd = new SqlCommand("SELECT * FROM Tecnicos"))
                 {
                     using (SqlDataAdapter sda = new SqlDataAdapter())
                     {

@@ -86,7 +86,7 @@ namespace Examen2
         /*protected void btnAgregar_Click(object sender, EventArgs e)
         {
 
-            int resultado = Clases.Articulo.Agregar(tdescripcion.Text, float.Parse(tprecio.Text), int.Parse(DropDownList1.SelectedValue));
+            int resultado = Classes.Equipo.Agregar(tdescripcion.Text, float.Parse(tprecio.Text), int.Parse(DropDownList1.SelectedValue));
 
             if (resultado > 0)
             {
